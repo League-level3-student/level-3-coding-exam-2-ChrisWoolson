@@ -10,29 +10,34 @@ public class Level3CodingExam {
 	/**
 	 * PART A
 	 * 
-	 * There are two people competing in a gold mining contest. The weight of each gold nugget found by each competitor is stored in a separate ArrayList.
-	 * Write a methods that takes in two ArrayLists of Doubles and returns the ArrayList with the highest total of Doubles.
-	 * **/
+	 * There are two people competing in a gold mining contest. The weight of each
+	 * gold nugget found by each competitor is stored in a separate ArrayList. Write
+	 * a methods that takes in two ArrayLists of Doubles and returns the ArrayList
+	 * with the highest total of Doubles.
+	 **/
 	@Test
 	public void testWinner() {
 		ArrayList<Double> WyateErpsNuggets = new ArrayList<Double>();
 		ArrayList<Double> ButchCassidaysNuggets = new ArrayList<Double>();
-		
+
 		WyateErpsNuggets.add(3.14);
 		WyateErpsNuggets.add(2.34);
 		WyateErpsNuggets.add(1.16);
 		WyateErpsNuggets.add(4.76);
 		WyateErpsNuggets.add(8.48);
-		
+
 		ButchCassidaysNuggets.add(2.34);
 		ButchCassidaysNuggets.add(4.35);
 		ButchCassidaysNuggets.add(1.35);
 		ButchCassidaysNuggets.add(6.36);
 		ButchCassidaysNuggets.add(0.84);
 
-		assertEquals(WyateErpsNuggets, new ContestCalculator().calculateWinner(WyateErpsNuggets, ButchCassidaysNuggets));
+		assertEquals(WyateErpsNuggets,
+				new ContestCalculator().calculateWinner(WyateErpsNuggets, ButchCassidaysNuggets));
 	}
 
+	
+	
 
 	/** 
 	 * PART B
