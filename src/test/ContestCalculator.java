@@ -17,7 +17,7 @@ public class ContestCalculator {
 
 			total2 += ButchCassidaysNuggets.get(i);
 		}
-		if (total > total2) {
+		if (total >= total2) {
 			return WyateErpsNuggets;
 		}
 
